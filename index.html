@@ -6,16 +6,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="author" content="Josue, Almir, Maria Vitoria">
 
   <title>Ouro Liquido</title>
-
-  <!-- Bootstrap core CSS -->
+  <!-- Bootstrap CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
+  <!-- template -->
   <link href="css/scrolling-nav.css" rel="stylesheet">
-
+  <!-- FontAwesome (botões)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- meu CSS -->
+  <link rel="stylesheet" type="text/css" href="css/custom-css.css">
 </head>
 
 <body id="page-top">
@@ -30,7 +31,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#objetivo">Objetivo</a>
+            <a class="nav-link js-scroll-trigger" href="#objetivo">Apresentação</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#grafico">Grafico</a>
@@ -43,20 +44,20 @@
     </div>
   </nav>
 
-  <header class="bg-primary text-white">
+  <header>
     <div class="container text-center">
-      <h1>ECONOMIZE AGUA</h1>
-      <p class="lead">Em media o brasileiro consome 200 litros de água por dia.</p>
-      <p class="lead">Como você pode economizar?</p>
+      <img src="img/banner2.png">
     </div>
   </header>
 
+  <div class="container-fluid">
   <section id="objetivo">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>OBJETIVO</h2>
-          <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
+          <h2>A SITUAÇÃO</h2>
+          <p class="lead">Pesquisas mostram que brasileiro gasta em média 200 litros de água por dia, esse consumo é estimado por pessoa mas não é so isso, segundo a EOS Consultores: "De cada 100 litros de água tratada no Brasil<span id="dots">...</span><span id="more"> somente 63 litros são consumidos e os 37 restantes são perdidos. As perdas ocorrem devido à vazamento, ligações irregulares, falta de medição ou medição incorreta e roubos."</span></p>
+          <button type="button" class="btn btn-dark" onclick="verMais()" id="myBtn">Read more</button>
         </div>
       </div>
     </div>
@@ -78,16 +79,20 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>CRIADORES</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+          <p class="lead">Esse site foi criado pelos alunos do curso de SPI 2/2019 do IFB.</p>
+          <p>Josue de Paulo Viana <a href="https://www.instagram.com/peixe_jp/" target="_blank" class="fa fa-instagram"></a></p>
+          <p>Almir Malheiros <a href="https://www.instagram.com/almir_malheiros/" target="_blank" class="fa fa-instagram"></a></p>
+          <p>Maria Vitória <a href="https://www.instagram.com/mariav_flor/" target="_blank" class="fa fa-instagram"></a></p>
         </div>
       </div>
     </div>
   </section>
+</div>
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+      <p class="m-0 text-center text-white">Copyright &copy; O que é economia? 2019</p>
     </div>
     <!-- /.container -->
   </footer>
@@ -95,13 +100,12 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
   <!-- Custom JavaScript for this theme -->
   <script src="js/scrolling-nav.js"></script>
-
+  <!-- Meu JS -->
+  <script src="js/ver-mais.js"></script>
 </body>
 
 </html>
