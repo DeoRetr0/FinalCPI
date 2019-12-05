@@ -20,7 +20,6 @@ section{
 	background-color: white;
 	width: 61%;
 	margin-left: 320px;
-	height: 600px;
 	padding-top: 53px;
 	padding-bottom: 20px;
 }
@@ -50,5 +49,14 @@ select {
 	margin-bottom: 40px;
 }
 #criadores {
+	height: 400px;
+}
+#newsletter {
 	height: 500px;
+}
+#paraque {
+	height: 550px;
+}
+#meça {
+	height: 650px;
 }
