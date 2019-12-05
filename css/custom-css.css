@@ -20,13 +20,29 @@ section{
 	background-color: white;
 	width: 61%;
 	margin-left: 250px;
+	height: 600px;
 }
 header img{
-	width: 70%;
-	padding: -20px;
+	width: 81.04%;
+	height: 600px;
 	margin: -100px;
+	padding-left: 365px;
+	align-self: auto;
 }
 #more {
 	display: none;
 }
-
+.icone {
+	width: 7%;
+	height: 43px;
+}
+h2 {
+	color: #5ce1e6;
+	padding-bottom: 2%;
+}
+.lead {
+	margin-bottom: 40px;
+}
+select {
+	margin-bottom: 40px;
+}

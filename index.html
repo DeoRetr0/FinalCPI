@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="Josue, Almir, Maria Vitoria">
 
-  <title>Ouro Liquido</title>
+  <title>Quanta água nesse copo?</title>
   <!-- Bootstrap CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- template -->
@@ -22,19 +22,22 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Ouro Liquido</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Quanta água nesse copo?</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#objetivo">Apresentação</a>
+            <a class="nav-link js-scroll-trigger" href="#paraque">Para que serve essa página?</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#grafico">Grafico</a>
+            <a class="nav-link js-scroll-trigger" href="#meça">Meça seu consumo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#newsletter">Newsletter</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#criadores">Criadores</a>
@@ -45,30 +48,72 @@
   </nav>
 
   <header>
-    <div class="container text-center">
-      <img src="img/banner2.png">
-    </div>
+  <img src="../FinalCPI/img/capa.png">
+  </div>
   </header>
 
   <div class="container-fluid">
-  <section id="objetivo">
+  <section id="paraque">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>A SITUAÇÃO</h2>
-          <p class="lead">Pesquisas mostram que brasileiro gasta em média 200 litros de água por dia, esse consumo é estimado por pessoa mas não é so isso, segundo a EOS Consultores: "De cada 100 litros de água tratada no Brasil<span id="dots">...</span><span id="more"> somente 63 litros são consumidos e os 37 restantes são perdidos. As perdas ocorrem devido à vazamento, ligações irregulares, falta de medição ou medição incorreta e roubos."</span></p>
-          <button type="button" class="btn btn-dark" onclick="verMais()" id="myBtn">Read more</button>
+          <h2>Para que serve essa página?</h2><span></span>
+          <p class="lead">Muita gente não sabe, mas a quantidade de água usada para produzir um copo descartável e jogar ele no lixo é extremamente alta.</p>
+            
+          <p> Segundo matéria do site <a href="https://www.menos1lixo.com.br/posts/lavar-nao-gasta-mais-do-que-o-descartavel" target="_blank">Menos Lixo</a>, para produzir um copo descartável são gastos <strong> até 3 litros de água </strong>. Já para lavar um copo reutilizável, você usa só <strong> 300 mililitros do nosso bem mais precioso </strong>.</p>
+              
+          <p> Assim, quando usamos copos descartáveis, consumimos mais água e emitimos mais CO² do que quando utilizamos copos retornáveis.</p>
+            
+          <p>Multiplicando a quantidade de copos descartáveis que cada um de nós consome todos os dias, <strong>a diferença fica ainda maior</strong>.</p>              
+            
+          <p>Mas e você, sabe quanto água acaba gastando ao usar copos descartáveis? <strong>Chegou a hora de descobrir!</strong></p>
+              </span></p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="grafico" class="bg-light">
+  <section id="meça" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>GRAFICO</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+          <h2>Meça seu consumo</h2>
+          <p class="lead">Selecione a quantidade de copos descartáveis que você consome em <strong>um mês</strong> e descubra quanta água foi gasta no processo.</p>
+
+          <select>
+            <option value="nenhum">Nenhum</option>
+            <option value="ate10">De 1 a 10 copos</option>
+            <option value="maisde10">Mais de 10 copos</option>
+          </select>
+            
+           <p><strong>Produzir essa quantidade de copos descartáveis são necessários: </strong></p>
+            
+            <img src="../FinalCPI/img/cheio.png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="newsletter" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Newsletter</h2>
+          <p class="lead">Se interessou pelo tema e quer saber como consumir de forma mais consciente? 
+            
+            Assine a nossa newsletter e faça parte desse movimento!
+                     
+            <form>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Nome</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu nome">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Email</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite seu email">
+                </div>
+                <button type="submit" class="btn btn-info">Assinar</button>
+              </form>
         </div>
       </div>
     </div>
@@ -78,11 +123,11 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>CRIADORES</h2>
-          <p class="lead">Esse site foi criado pelos alunos do curso de SPI 2/2019 do IFB.</p>
-          <p>Josue de Paulo Viana <a href="https://www.instagram.com/peixe_jp/" target="_blank" class="fa fa-instagram"></a></p>
-          <p>Almir Malheiros <a href="https://www.instagram.com/almir_malheiros/" target="_blank" class="fa fa-instagram"></a></p>
-          <p>Maria Vitória <a href="https://www.instagram.com/mariav_flor/" target="_blank" class="fa fa-instagram"></a></p>
+          <h2>Criadores</h2>
+          <p class="lead">Essa página foi feita e idealizada pelos alunos de TSI/IFB:</p>
+          <p>Josue de Paulo Viana <img a href="https://www.instagram.com/peixe_jp/" target="_blank" class="icone" src="../FinalCPI/img/iconinst.png"></a></p>
+          <p>Almir Malheiros <img a href="https://www.instagram.com/almir_malheiros/" target="_blank" class="icone" src="../FinalCPI/img/iconinst.png"></a></p>
+          <p>Maria Vitória Flor <img a href="https://www.instagram.com/mariav_flor/" target="_blank" class="icone" src="../FinalCPI/img/iconinst.png"></a></p>         
         </div>
       </div>
     </div>
@@ -90,9 +135,9 @@
 </div>
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-5 bg-info">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; O que é economia? 2019</p>
+      <p class="m-0 text-center text-white">Copyright &copy; Quanta água nesse copo? 2019</p>
     </div>
     <!-- /.container -->
   </footer>
