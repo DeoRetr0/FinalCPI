@@ -22,17 +22,37 @@
         document.getElementById(imgid).src = "../FinalCPI/img/" + newimg + ".png";
       } 
   </script>
-  <script>
-      function Alerta(){
-      alert("Cadastro realizado com sucesso!");
-}
- </script>
-</head>
+ 
+  
+  <script type="text/javascript">
+    function validaForm(formulario) {
+    if(formulario.formGroupExampleInput.value == "" || formulario.formGroupExampleInput.value == null){   
+        alert("Por favor, indique o seu nome.");
+        
+        formulario.formGroupExampleInput.focus();        
+        return false;
+    }
+    
+    if(formulario.formGroupExampleInput2.value == "" ||  formulario.formGroupExampleInput2.value == null) {
+        alert("Por favor, indique um e-mail válido.");
 
-<body id="page-top">
+        formulario.formGroupExampleInput2.focus();
+        return false;
+    }
+    
+     if((formulario.formGroupExampleInput.value != "" || formulario.formGroupExampleInput.value != null) 
+      && (formulario.formGroupExampleInput2.value != "" ||  formulario.formGroupExampleInput2.value != null)) {
+        
+        alert("Assinatura efetuada com sucesso!");
+        return false;
+      }
+    }  
+  </script>  
+</head>
+<body id="page-top"> 
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Quanta água nesse copo?</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -114,16 +134,17 @@
             
             Assine a nossa newsletter e faça parte desse movimento!
                      
-            <form>
+            <form name="formulario" method="post" action="#" onsubmit="return validaForm(this);">
                 <div class="form-group">
                   <label for="formGroupExampleInput">Nome</label>
-                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Seu nome" required>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Seu nome" >
                 </div>
                 <div class="form-group">
                   <label for="formGroupExampleInput2">Email</label>
-                  <input type="text" class="form-control" id="formGroupExampleInput2" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="seuemail@gmail.com" required>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="seuemail@gmail.com"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                 </div>
-                <button type="submit" value="ok" id="ok" onClick=Alerta() class="btn btn-info">Assinar</button>
+                </p><label><input type="submit" name="sbt" value="Assinar" /></label></p>
+
               </form>
         </div>
       </div>
@@ -144,21 +165,21 @@
         <div class="container">   
           <div class="row">
             <div class="col-sm">
-          <p><strong>Almir Malheiros</strong><img a href="https://www.instagram.com/almir_malheiros/" target="_blank" class="icone" src="../FinalCPI/img/iconinst.png"></a></p>
+          <p><strong>Almir Malheiros</strong><a href="https://www.instagram.com/almir_malheiros/" target="_blank"><img class="icone" src="../FinalCPI/img/iconinst.png"></a></p>
         </div>
       </div>
     </div>
     <div class="container">
           <div class="row">
           <div class="col-sm">
-          <p><strong> Josué de Paulo Viana</strong> <img a href="https://www.instagram.com/peixe_jp/" target="_blank" class="icone" src="../FinalCPI/img/iconinst.png"></a></p>
+          <p><strong> Josué de Paulo Viana</strong><a href="https://www.instagram.com/peixe_jp/" target="_blank"><img class="icone" src="../FinalCPI/img/iconinst.png"></a></p>
         </div>
       </div>
     </div>
     <div class="container">
         <div class="row">
           <div class="col-sm">
-          <p><strong>Maria Vitória Flor</strong> <img a href="https://www.instagram.com/mariav_flor/" target="_blank" class="icone" src="../FinalCPI/img/iconinst.png"></a></p>         
+          <p><strong>Maria Vitória Flor</strong> <a href="https://www.instagram.com/mariav_flor/" target="_blank"><img class="icone" src="../FinalCPI/img/iconinst.png"></a></p>         
         </div>
       </div>
     </div>
