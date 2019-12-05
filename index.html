@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-  <meta name="author" content="Josue, Almir, Maria Vitoria">
+  <meta name="author" content="Josue, Almir, Maria Vitória">
 
   <title>Quanta água nesse copo?</title>
   <!-- Bootstrap CSS -->
@@ -17,6 +17,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- meu CSS -->
   <link rel="stylesheet" type="text/css" href="css/custom-css.css">
+  <script>
+      function jsDropDown(imgid, newimg) {
+        document.getElementById(imgid).src = "../FinalCPI/img/" + newimg + ".png";
+      } 
+  </script>
+  <script>
+      function Alerta(){
+      alert("Cadastro realizado com sucesso!");
+}
+ </script>
 </head>
 
 <body id="page-top">
@@ -48,7 +58,7 @@
   </nav>
 
   <div>
-  <img id="capa" src="../FinalCPI/img/capa.png">
+  <img id="capa" src="../FinalCPI/img/capa2.png">
   </div>
   </div>
 
@@ -57,7 +67,7 @@
       <div class="row">
         <div class="col-lg-12 mx-auto">
           <h2>Para que serve essa página?</h2><span></span>
-          <p class="lead">Muita gente não sabe, mas a quantidade de água usada para produzir um copo descartável e jogar ele no lixo é extremamente alta.</p>
+          <p class="lead">Muita gente não sabe, mas a quantidade de água usada para produzir um copo descartável e jogar ele no lixo é <strong>extremamente alta</strong>.</p>
             
           <p> Segundo matéria do site <a href="https://www.menos1lixo.com.br/posts/lavar-nao-gasta-mais-do-que-o-descartavel" target="_blank">Menos Lixo</a>, para produzir um copo descartável são gastos <strong> até 3 litros de água </strong>. Já para lavar um copo reutilizável, você usa só <strong> 300 mililitros do nosso bem mais precioso</strong>.</p>
               
@@ -94,11 +104,7 @@
       </div>
     </div>
   </section>
-<script>
-  function jsDropDown(imgid, newimg) {
-    document.getElementById(imgid).src = "../FinalCPI/img/" + newimg + ".png";
-  } 
-</script>
+
   <section id="newsletter">
     <div class="container">
       <div class="row">
@@ -111,18 +117,20 @@
             <form>
                 <div class="form-group">
                   <label for="formGroupExampleInput">Nome</label>
-                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu nome">
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Seu nome" required>
                 </div>
                 <div class="form-group">
                   <label for="formGroupExampleInput2">Email</label>
-                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite seu email">
+                  <input type="text" class="form-control" id="formGroupExampleInput2" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="seuemail@gmail.com" required>
                 </div>
-                <button type="submit" class="btn btn-info">Assinar</button>
+                <button type="submit" value="ok" id="ok" onClick=Alerta() class="btn btn-info">Assinar</button>
               </form>
         </div>
       </div>
     </div>
   </section>
+
+  </script>
 
   <section id="criadores" class="bg-light">
     <div class="container" >
