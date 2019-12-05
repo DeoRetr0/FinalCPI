@@ -19,22 +19,25 @@ header{
 section{
 	background-color: white;
 	width: 61%;
-	margin-left: 250px;
+	margin-left: 320px;
 	height: 600px;
+	padding-top: 53px;
+	padding-bottom: 20px;
 }
 header img{
-	width: 81.04%;
-	height: 600px;
+	width: 85.06%;
+	height: 565px;
 	margin: -100px;
-	padding-left: 365px;
+	padding-left: 435px;
 	align-self: auto;
 }
 #more {
 	display: none;
 }
 .icone {
-	width: 7%;
-	height: 43px;
+	width: 6%;
+	height: 38px;
+	margin-left: 2%;
 }
 h2 {
 	color: #5ce1e6;
@@ -45,4 +48,7 @@ h2 {
 }
 select {
 	margin-bottom: 40px;
+}
+#criadores {
+	height: 500px;
 }
