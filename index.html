@@ -47,16 +47,15 @@
     </div>
   </nav>
 
-  <header>
-  <img src="../FinalCPI/img/capa.png">
+  <div>
+  <img id="capa" src="../FinalCPI/img/capa.png">
   </div>
-  </header>
+  </div>
 
-  <div class="container-fluid">
   <section id="paraque">
-    <div class="container">
+  <div class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-12 mx-auto">
           <h2>Para que serve essa página?</h2><span></span>
           <p class="lead">Muita gente não sabe, mas a quantidade de água usada para produzir um copo descartável e jogar ele no lixo é extremamente alta.</p>
             
@@ -76,28 +75,34 @@
   <section id="meça" class="bg-light">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+      <div class="col-lg-12 mx-auto" class="bg-light">
           <h2>Meça seu consumo</h2>
           <p class="lead">Selecione a quantidade de copos descartáveis que você consome em <strong>um mês</strong> e descubra quanta água foi gasta no processo.</p>
 
-          <select>
-            <option value="nenhum">Nenhum</option>
-            <option value="ate10">De 1 a 10 copos</option>
-            <option value="maisde10">Mais de 10 copos</option>
-          </select>
-            
-           <p><strong>Para produzir essa quantidade de copos descartáveis são necessários: </strong></p>
-            
-            <img src="../FinalCPI/img/cheio.png">
+        <div class="select-custom"> 
+          <select name="copos" onchange="jsDropDown ('copo', this.value)">
+          <option value="vazio"selected>Qtd de copos</option>
+          <option value="vazio">Nenhum</option>
+          <option value="meiocheio">Entre 1 e 10 copos</option>
+          <option value="cheio">Mais de 10 copos</option>
+      </select>
+          
+           <p id="medicao"><strong>Para produzir essa quantidade de copos descartáveis são necessários (em litros de água): </strong></p>
+            <img id="copo" src="../FinalCPI/img/vazio.png" />           
+          </div>
         </div>
       </div>
     </div>
   </section>
-
+<script>
+  function jsDropDown(imgid, newimg) {
+    document.getElementById(imgid).src = "../FinalCPI/img/" + newimg + ".png";
+  } 
+</script>
   <section id="newsletter">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-12 mx-auto">
           <h2>Newsletter</h2>
           <p class="lead">Se interessou pelo tema e quer saber como consumir de forma mais consciente? 
             
@@ -120,19 +125,36 @@
   </section>
 
   <section id="criadores" class="bg-light">
-    <div class="container">
+    <div class="container" >
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-12 mx-auto">
           <h2>Criadores</h2>
-          <p class="lead">Essa página foi feita e idealizada pelos alunos de TSI/IFB:</p>
+          <p class="lead">Essa página foi feita e idealizada pelos alunos de TSI do IFB:</p>
+        </div>
+          </div>
+        </div>
+        <div class="container">   
+          <div class="row">
+            <div class="col-sm">
           <p><strong>Almir Malheiros</strong><img a href="https://www.instagram.com/almir_malheiros/" target="_blank" class="icone" src="../FinalCPI/img/iconinst.png"></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+          <div class="row">
+          <div class="col-sm">
           <p><strong> Josué de Paulo Viana</strong> <img a href="https://www.instagram.com/peixe_jp/" target="_blank" class="icone" src="../FinalCPI/img/iconinst.png"></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
           <p><strong>Maria Vitória Flor</strong> <img a href="https://www.instagram.com/mariav_flor/" target="_blank" class="icone" src="../FinalCPI/img/iconinst.png"></a></p>         
         </div>
       </div>
     </div>
   </section>
-</div>
 
   <!-- Footer -->
   <footer class="py-4 bg-info">
